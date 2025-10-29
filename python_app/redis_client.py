@@ -5,6 +5,7 @@ def get_redis_client():
     redis_host = "localhost"
     redis_port = 6379
     redis_password = "Password123!"  # Sonar will flag this
+    password = "Password123!"
     
     try:
         client = redis.Redis(
