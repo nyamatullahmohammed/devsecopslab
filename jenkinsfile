@@ -38,7 +38,7 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv(credentialsId: 'vish-sonarcloud-token', installationName: 'vish-sonarqube') {
+                withSonarQubeEnv(credentialsId: 'nyamat-sonarcloud-token', installationName: 'nyamat-sq') {
                     sh '''#!/bin/bash
                         set -eux
                         echo "=== SonarQube installation ==="
